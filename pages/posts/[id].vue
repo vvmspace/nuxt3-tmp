@@ -1,12 +1,19 @@
 <template>
+  <Head>
+    <Title>{{ post.title }}</Title>
+    <Meta name="description" :content="post.description" />
+    <Html lang="en" />
+  </Head>
   <PageTitle :title="title" />
   <article>{{ content }}</article>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+// mock post data
 const {
   params: { id },
 } = useRoute();
+
 const title = `Post ${id}`;
 const contents = [
   "This is the first post",
@@ -15,13 +22,12 @@ const contents = [
 
 const content = contents[(id - 1) % contents.length];
 
-useHead({
+const post: Post = {
+  id,
   title,
-  meta: [{ name: "description", content: title }],
-  htmlAttrs: {
-    lang: "en",
-  },
-});
+  content,
+  description: content.slice(0, 100) + "...",
+};
 </script>
 
 <style lang="scss" scoped>
