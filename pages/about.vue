@@ -1,3 +1,3 @@
 <template>
-    <PageTitle title="About" />
+  <PageTitle title="About" />
 </template>
