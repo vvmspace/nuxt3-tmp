@@ -72,7 +72,6 @@ yarn format
 bun run format
 ```
 
-
 ## Setup
 
 Make sure to install the dependencies:
