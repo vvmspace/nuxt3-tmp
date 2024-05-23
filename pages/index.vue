@@ -5,12 +5,15 @@
   </div>
 </template>
 
-<script setup>
-const { data: posts } = await useAsyncData("posts", async () => [
-  { id: "1", title: "Post 1", description: "Post with description" },
-  { id: "2", title: "Post 2", content: "Post with content" },
-  { id: "3", title: "Post 3" },
-]);
+<script lang="ts" setup>
+const { data: posts }: { data: Post[] } = await useAsyncData(
+  "posts",
+  async () => [
+    { id: "1", title: "Post 1", description: "Post with description" },
+    { id: "2", title: "Post 2", content: "Post with content" },
+    { id: "3", title: "Post 3" },
+  ],
+);
 
 useHead({
   title: "My Blog",
