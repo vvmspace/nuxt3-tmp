@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/robots',
     '@pinia/nuxt',
   ],
   nitro: {
