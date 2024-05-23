@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <Head>
+      <Title>My Blog</Title>
+      <Meta name="description" content="My Blog" />
+      <Html lang="en" />
+    </Head>
     <PageTitle title="My Blog" />
     <PostCard v-for="post in posts" :key="post.id" :post="post" />
   </div>
@@ -14,12 +19,4 @@ const { data: posts }: { data: Post[] } = await useAsyncData(
     { id: "3", title: "Post 3" },
   ],
 );
-
-useHead({
-  title: "My Blog",
-  meta: [{ name: "description", content: "My Blog" }],
-  htmlAttrs: {
-    lang: "en",
-  },
-});
 </script>
