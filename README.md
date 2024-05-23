@@ -1,5 +1,7 @@
 # Nuxt 3 Minimal Starter
 
+![Lighthouse: 97/100/100/91](./lighthouse.png "Lighthouse: 97/100/100/91")
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
@@ -56,6 +58,8 @@ yarn build
 bun run build
 ```
 
+## Production Preview
+
 Locally preview production build:
 
 ```bash
@@ -70,6 +74,22 @@ yarn preview
 
 # bun
 bun run preview
+```
+
+Build the application for production and preview it locally:
+    
+```bash
+# npm
+npm run prod
+
+# pnpm
+pnpm run prod
+
+# yarn
+yarn prod
+
+# bun
+bun run prod
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
