@@ -4,7 +4,7 @@
             <NuxtLink to="/" class="logo">Home</NuxtLink>
             <ul>
                 <li><NuxtLink to="/about">About</NuxtLink></li>
-                <li><NuxtLink to="https://github.com/vvmspace">GitHub</NuxtLink></li>
+                <li><NuxtLink to="https://github.com/vvmspace/nuxt3-tmp">GitHub</NuxtLink></li>
             </ul>
         </nav>
     </header>
