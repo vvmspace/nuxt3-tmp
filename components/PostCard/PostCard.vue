@@ -9,7 +9,7 @@
 <script lang="ts" setup>
 const props = defineProps({
   post: {
-    type: Object,
+    type: Object as PropType<Post>,
     required: true,
   },
 });
