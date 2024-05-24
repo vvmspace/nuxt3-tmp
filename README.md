@@ -84,7 +84,7 @@ npm install
 pnpm install
 
 # yarn
-yarn install
+yarn
 
 # bun
 bun install
@@ -95,6 +95,9 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
+# docker
+docker-compose up
+
 # npm
 npm run dev
 
