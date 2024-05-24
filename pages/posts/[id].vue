@@ -4,8 +4,10 @@
     <Meta name="description" :content="post.description" />
     <Html lang="en" />
   </Head>
-  <PageTitle :title="title" />
-  <article>{{ content }}</article>
+  <div class="container mx-auto">
+    <PageTitle :title="title" />
+    <article>{{ content }}</article>
+  </div>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto">
     <Head>
       <Title>My Blog</Title>
       <Meta name="description" content="My Blog" />
